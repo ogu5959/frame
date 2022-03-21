@@ -1,0 +1,33 @@
+.warp {
+    position:relative; 
+    height:100px;
+}
+
+.mainFrame {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    width:100%;
+    height:100%;
+    z-index: 999;
+    background-color: #fff;
+}
+
+.ctiFrame {
+    position: fixed;
+    display: block;
+    width: 500px;
+    height: 70px;
+    background-color: red;
+    z-index: 99999;
+}
+
+.loginFrame {
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: #fff;
+}

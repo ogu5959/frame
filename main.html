@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type='text/javascript' charset='utf-8' src='./lib/jquery-1.4.2.min.js'></script>                
+        <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    </head>
+    <body>
+    <div class="warp">       
+        <iframe id="ctiFrame" src="./cti.html" frameborder="0" class="ctiFrame"></iframe> 
+
+        <div class="mainFrame">
+            <h1>MAIN PAGE</h1>
+        </div>
+
+        <iframe id="loginFrame" src="./login.html" frameborder="0" class="loginFrame"></iframe>        
+    </div>
+    </body>
+    <script>
+        function afterLogin() {
+            $("#loginFrame").hide();
+        }
+    </script>
+</html>

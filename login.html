@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <script type='text/javascript' charset='utf-8' src='./lib/jquery-1.4.2.min.js'></script>        
+    </head>
+    <body>
+        <div>
+            <section>
+                <div>
+                    <!--loginbox-->
+                    <table>
+                        <colgroup>
+                            <col width="90px" />
+                            <col width="130px" />
+                        </colgroup>
+                        <tr>
+                            <th>AGENT ID</th>
+                            <td>
+                                <input id="AGENTID" maxlength="7"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>DN</th>
+                            <td>
+                                <input id="DN" maxlength="7" />
+                            </td>
+                        </tr>               
+                    </table>
+                    <!--//loginbox-->
+                </div>   
+                <div> 
+                    <button id="btnLogin" type="button">SEND</button>
+                </div>     
+            </section>
+        </div>
+    </body>
+    <script>
+    
+        $(document).ready (function (){
+            $("#btnLogin").click(function() {
+                alert("login sucess");
+                parent.focus();
+                parent.afterLogin();
+            });
+           
+        })
+    </script>
+</html>
